@@ -1,3 +1,16 @@
+.section.description {
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
+
+.section-title.description {
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 10px;
+}
+
 .section-description-box {
   width: 270px;
   height: 120px;
@@ -18,30 +31,16 @@
   background-color: wheat;
 }
 
-.section.description {
-  padding-top: 94px;
-  padding-bottom: 47px;
-}
-
 .section-list {
   display: flex;
-}
-.section-list li {
-  width: 270px;
-}
-.section-list li:not(:last-child) {
-  margin-right: 30px;
-}
-
-.section-list p {
-  font-size: 14px;
-  line-height: 1.7;
-}
-
-.section-title.description {
-  text-transform: uppercase;
-  text-align: left;
-  font-size: 14px;
-  line-height: 1.14;
-  margin-bottom: 10px;
+  li {
+    width: 270px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }

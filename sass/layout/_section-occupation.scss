@@ -5,13 +5,12 @@
 
 .occupation-images {
   display: flex;
-}
-
-.occupation-images li:not(:last-child) {
-  margin-right: 30px;
-}
-.occupation-images li {
-  width: 370px;
+  li {
+    width: 370px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .occupation-image-item {

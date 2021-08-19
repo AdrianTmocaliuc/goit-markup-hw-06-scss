@@ -1,4 +1,4 @@
-.regular-costumers {
+.regular-costumer {
   padding-bottom: 94px;
   padding-top: 94px;
 }
@@ -32,16 +32,13 @@
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: border-color var(--transition-link-time) var(--transition-cubic);
-}
-
-.regular-costumer-list-link:hover,
-.regular-costumer-list-link:focus {
-  border-color: var(--button-text-color);
-  transition: border-color var(--transition-link-time) var(--transition-cubic);
-}
-
-.regular-costumer-list-link:hover .regular-costumer-list-icon,
-.regular-costumer-list-link:focus .regular-costumer-list-icon {
-  fill: var(--button-text-color);
-  transition: fill var(--transition-link-time) var(--transition-cubic);
+  &:hover,
+  &:focus {
+    border-color: var(--button-text-color);
+    transition: border-color var(--transition-link-time) var(--transition-cubic);
+    .regular-costumer-list-icon {
+      fill: var(--button-text-color);
+      transition: fill var(--transition-link-time) var(--transition-cubic);
+    }
+  }
 }

@@ -4,10 +4,6 @@
   justify-content: space-between;
 }
 
-.social-list-link:not(:last-child) {
-  margin-right: 10px;
-}
-
 .social-list-link {
   display: flex;
   justify-content: center;
@@ -17,22 +13,23 @@
   border-radius: 50%;
   transition: background-color var(--transition-link-time)
     var(--transition-cubic);
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+  &:hover,
+  &:focus {
+    background-color: var(--button-text-color);
+    transition: background-color var(--transition-link-time)
+      var(--transition-cubic);
+    transition: fill var(--transition-link-time) var(--transition-cubic);
+    .social-list-icon {
+      fill: #ffffff;
+      transition: fill var(--transition-link-time) var(--transition-cubic);
+    }
+  }
 }
 .social-list-icon {
   fill: var(--icons-color);
-  transition: fill var(--transition-link-time) var(--transition-cubic);
-}
-.social-list-link:hover,
-.social-list-link:focus {
-  background-color: var(--button-text-color);
-  transition: background-color var(--transition-link-time)
-    var(--transition-cubic);
-  transition: fill var(--transition-link-time) var(--transition-cubic);
-}
-
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-  fill: #ffffff;
   transition: fill var(--transition-link-time) var(--transition-cubic);
 }
 
@@ -51,6 +48,12 @@
   border-radius: 50%;
   transition: background-color var(--transition-link-time)
     var(--transition-cubic);
+  &:hover,
+  &:focus {
+    background-color: var(--button-text-color);
+    transition: background-color var(--transition-link-time)
+      var(--transition-cubic);
+  }
 }
 
 .footer-social-list-item:not(:last-child) {
@@ -59,10 +62,4 @@
 
 .footer-social-list-icon {
   fill: #ffffff;
-}
-.footer-social-list-link:hover,
-.footer-social-list-link:focus {
-  background-color: var(--button-text-color);
-  transition: background-color var(--transition-link-time)
-    var(--transition-cubic);
 }

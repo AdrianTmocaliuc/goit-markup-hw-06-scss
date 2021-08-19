@@ -1,0 +1,39 @@
+.section.occupation {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+
+.occupation-images {
+  display: flex;
+}
+
+.occupation-images li:not(:last-child) {
+  margin-right: 30px;
+}
+.occupation-images li {
+  width: 370px;
+}
+
+.occupation-image-item {
+  position: relative;
+}
+
+.occupation-image-box {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  bottom: 0px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.occupation-image-title {
+  text-transform: uppercase;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #fff;
+}
